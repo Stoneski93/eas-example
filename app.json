@@ -1,0 +1,12 @@
+{
+  "name": "eas-example-v2",
+  "displayName": "eas-example-v2",
+  "expo": {
+    "name": "eas-example-v2",
+    "slug": "eas-example-v2",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
