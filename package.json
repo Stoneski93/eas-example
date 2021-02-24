@@ -1,7 +1,7 @@
 {
   "main": "index.js",
   "scripts": {
-    "eas-build-pre-install": "yarn start --reset-cache",
+    "eas-build-pre-install": "cd android && ./gradlew clean",
     "android": "react-native run-android",
     "ios": "react-native run-ios",
     "web": "expo start --web",
