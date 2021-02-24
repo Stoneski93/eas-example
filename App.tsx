@@ -33,10 +33,7 @@ export default function App() {
     <View style={styles.container}>
       {isStart ? (
         <View style={{ width: "100%" }}>
-          <Image
-            style={{ width: "100%", height: "100%" }}
-            source={require("./assets/daniel.gif")}
-          />
+          <Text>Started</Text>
         </View>
       ) : (
         <>

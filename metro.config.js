@@ -2,7 +2,7 @@ const { getDefaultConfig } = require("metro-config");
 
 module.exports = (async () => {
   const {
-    resolver: { assetExts },
+    resolver: { sourceExts, assetExts },
   } = await getDefaultConfig();
 
   return {
@@ -10,6 +10,7 @@ module.exports = (async () => {
       assetPlugins: ["expo-asset/tools/hashAssetFiles"],
     },
     resolver: {
+      assetExts: [...assetExts, "mp3"],
       assetExts: [...assetExts, "mp3"],
     },
   };
