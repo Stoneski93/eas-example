@@ -51,6 +51,8 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>NSMicrophoneUsageDescription</key>
+  <string>Allow $(PRODUCT_NAME) to access your microphone</string>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>
   <key>UIStatusBarStyle</key>
