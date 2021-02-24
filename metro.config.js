@@ -10,8 +10,7 @@ module.exports = (async () => {
       assetPlugins: ["expo-asset/tools/hashAssetFiles"],
     },
     resolver: {
-      assetExts: assetExts.filter((ext) => ext !== "svg"),
-      sourceExts: [...sourceExts, "mp3"],
+      assetExts: [...assetExts, "mp3"],
     },
   };
 })();
