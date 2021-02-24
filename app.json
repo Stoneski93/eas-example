@@ -5,9 +5,8 @@
     "name": "eas-example-v2",
     "slug": "eas-example-v2",
     "version": "1.0.0",
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+    "assetBundlePatterns": ["**/*"],
+    "icon": "./assets/icon.png",
     "android": {
       "package": "com.easexamplev2"
     },
