@@ -7,9 +7,7 @@ export default function App() {
   const [sound, setSound] = React.useState<Audio.Sound | null>(null);
 
   async function playSound() {
-    const { sound } = await Audio.Sound.createAsync(
-      require("./assets/pixa.mp3")
-    );
+    const { sound } = await Audio.Sound.createAsync(require("./pixa.mp3"));
     setSound(sound);
 
     await sound.playAsync();
