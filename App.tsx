@@ -4,29 +4,29 @@ import { Audio } from "expo-av";
 
 export default function App() {
   const [isStart, setIsStart] = useState(false);
-  const [sound, setSound] = React.useState<Audio.Sound | null>(null);
+  // const [sound, setSound] = React.useState<Audio.Sound | null>(null);
 
-  async function playSound() {
-    const { sound } = await Audio.Sound.createAsync(
-      require("./assets/pixa.mp3")
-    );
-    setSound(sound);
+  // async function playSound() {
+  //   const { sound } = await Audio.Sound.createAsync(
+  //     require("./assets/pixa.mp3")
+  //   );
+  //   setSound(sound);
 
-    await sound.playAsync();
-    await sound.setIsLoopingAsync(true);
-  }
+  //   await sound.playAsync();
+  //   await sound.setIsLoopingAsync(true);
+  // }
 
-  React.useEffect(() => {
-    return sound
-      ? () => {
-          sound.unloadAsync();
-        }
-      : undefined;
-  }, [sound]);
+  // React.useEffect(() => {
+  //   return sound
+  //     ? () => {
+  //         sound.unloadAsync();
+  //       }
+  //     : undefined;
+  // }, [sound]);
 
   const onButtonPress = () => {
     setIsStart(true);
-    playSound();
+    // playSound();
   };
 
   return (
