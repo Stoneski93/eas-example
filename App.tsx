@@ -8,7 +8,7 @@ export default function App() {
 
   async function playSound() {
     const { sound } = await Audio.Sound.createAsync(
-      require("./assets/pixa2.mp3")
+      require("./assets/pixa.mp3")
     );
     setSound(sound);
 
