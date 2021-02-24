@@ -7,6 +7,12 @@
     "version": "1.0.0",
     "assetBundlePatterns": [
       "**/*"
-    ]
+    ],
+    "android": {
+      "package": "com.easexamplev2"
+    },
+    "ios": {
+      "bundleIdentifier": "org.name.easexamplev2"
+    }
   }
 }
